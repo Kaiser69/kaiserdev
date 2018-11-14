@@ -1,0 +1,236 @@
+
+  @import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+  
+   body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+       }
+
+    #menu-icon {
+    display: none;
+    }
+  
+   #menu-icon {
+    float: right;
+    display: block;
+    }
+  
+  .fa-school{
+        size: 1.2em;
+        margin: 1.5em;
+        float: left;
+    }
+     
+      /*-------Elements---------*/
+  
+     .topnav {
+           background-color: rgba(27, 70, 47, 0.877);
+           position: fixed;
+           width: 100%;
+           top: 0;
+           left: 0;
+           
+    }
+     
+     .topnav ul {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+    }
+     
+     .topnav ul li {
+           display: inline;
+           
+         }
+     
+     .topnav ul li a {
+           text-transform: uppercase;
+           color: rgb(252, 235, 7);
+           padding: 1.3em;
+           float: left;
+           margin: 0 5px 0 0;
+           border: 2px solid rgba(255, 255, 255, 0.651);
+           border-top: none;
+           border-bottom: none;
+           display: none;
+           background: rgb(27, 112, 64);
+           -webkit-transform: skew(-15deg);
+           -moz-transform: skew(-15deg);
+           -ms-transform: skew(-15deg);
+           -o-transform: skew(-15deg);
+           transform: skew(-15deg);
+           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.664);
+           text-align: center;
+           text-decoration:line;
+           
+         
+     }
+     
+     .topnav a:hover {
+      background-color: rgb(7, 82, 32);
+      color: rgb(255, 255, 255);
+      opacity: 0.7;
+       }
+  
+     #school:hover{
+      opacity: 0.7;
+       }
+      
+     #school {
+      border-radius: 0px;
+      cursor: pointer;
+      transition: 0.3s;
+     }
+  
+     .topnav ul li a:hover {
+           color: #D9C6E4;
+     }
+     
+     .topnav.dropped .fa-school{
+           float: none;
+     }
+     
+     .topnav.dropped ul li a {
+           display: block;
+           float: none;
+     }
+     
+     .topnav.dropped #menu-icon {
+           position: absolute;
+           right: 0;
+           top: 0;
+     }
+     * {
+        box-sizing: border-box;
+    }
+  
+  @media screen and (min-width:900px) {
+  
+     .topnav ul li a {
+              display: inline-block;
+        }
+        
+    #menu-icon {
+      display: none;
+     }
+  
+  .fa-school {
+      
+    display: inline;
+    color: yellowgreen;
+    
+        }
+    }
+       
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgba(33, 102, 36, 0.74);
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ffdb0fe0;
+    font-size: 1em; 
+}
+
+  .container {
+    border-radius: 8px;
+    background-color:  #f2f2f2;
+    padding: 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.back-to-top {    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4em;
+}
+
+.back-to-top  {
+  background-color: rgba(255, 255, 255, 0.555); 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.back-to-top:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+  .footer {
+
+  width:auto;
+  padding:2em;
+  background-color:rgba(27, 70, 47, 0.877);
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  color: #D9C6E4;
+}
+
+
+.footer:hover {opacity: 1}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: auto;
+  text-align: center;
+  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+      width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE .<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kaiser's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+         <nav class="topnav" id="myTopnav">
+
+                <a href="singlepage.html"><i id="school"class="fas fa-school"></i></a>
+               
+                    <ul>
+                       
+                      <li ><a href="singlepage.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="portfolio.html">PORTFOLIO</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li style="float:right"><a href="gallery.html">MY ART GALLERY</a></li>
+
+                      <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="fas fa-bars"></i></a></li>
+                
+                    </ul>
+           </nav>
+
+           <a name="top"></a>
+<!-- Container for the image gallery -->
+<h2>MY ART GALLERY</h2>
+<div id="myBtnContainer">
+  
+  <button class="btn active" onclick="filterSelection('all')"> <span> Show all</span></button>
+  <button class="btn" onclick="filterSelection('arts')"> <span>Art's</span></button>
+  <button class="btn" onclick="filterSelection('caveart')"> <span>Cave Art</span></button>
+  <button class="btn" onclick="filterSelection('sketch')"> <span>Sketch</span></button>
+  <button class="btn" onclick="filterSelection('landscape')"> <span>Lands Cape</span></button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column arts">
+    <div class="content">
+      <img src="media/arts1.png" alt="art" style="width:100%">
+      <h4>Arts</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column arts">
+    <div class="content">
+      <img src="media/arts1.png" alt="arts" style="width:100%">
+      <h4>Arts</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column arts">
+    <div class="content">
+      <img src="media/arts1.png" alt="arts" style="width:100%">
+      <h4>Arts</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column caveart">
+    <div class="content">
+      <img src="media/cave2.png" alt="caveart" style="width:100%">
+      <h4>Beauty of cave</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column caveart">
+    <div class="content">
+      <img src="media/cave2.png" alt="caveart" style="width:100%">
+      <h4>Cave</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column caveart">
+    <div class="content">
+      <img src="media/cave2.png" alt="caveart" style="width:100%">
+      <h4>Praching</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column sketch">
+    <div class="content">
+      <img src="media/sketch8.png" alt="sketch" style="width:100%">
+      <h4>Ram fight</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column sketch">
+    <div class="content">
+      <img src="media/sketch8.png" alt="sketch" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column sketch">
+    <div class="content">
+      <img src="media/sketch8.png" alt="sketch" style="width:100%">
+      <h4>Classic fight</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+
+  <div class="column landscape">
+    <div class="content">
+      <img src="media/landcape6.png" alt="landscape" style="width:100%">
+      <h4>Arts Kaiser</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column landscape">
+    <div class="content">
+      <img src="media/landscape2.png" alt="landscape" style="width:100%">
+      <h4>Arts 2</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column landscape">
+    <div class="content">
+      <img src="media/landscape0.png" alt="landscape" style="width:100%">
+      <h4>Kaiser At museum</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+     
+         <!--footer -->
+           
+         <a href="#top" class="back-to-top" >Back to top</a> <br><br>
+
+         <div class="footer" id="my-bottum">
+           
+      
+                 <span> <i style="color:rgb(255, 217, 0)">BY<small> PUSH</small> TO </i> <a href="index.html"><img src="push.png" alt="push me" width="40" height="40"></a><i style="color:rgba(20, 165, 64, 0.897)">THE<small> FIRST</small> PAGE</i> </span>  
+                <p style="color:rgba(47, 114, 63, 0.986);opacity: 0.5;
+                filter: Alpha(opacity=50);">  All rights reserved by K-Design   
+                  &copy; 2018 </p> 
+          
+          </div>
+
+        </footer>
+
+<!-- Js start poin -->
+
+<script>
+
+  
+
+  function navToggle() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "topnav") {
+                          x.className += " dropped";
+                      } else {
+                          x.className = "topnav";
+                        }
+                      }
+                      
+
+filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+
+ 
+
+
+</script>
+
+
+</body>
+</html>
+
+        
+        

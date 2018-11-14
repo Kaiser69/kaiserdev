@@ -1,0 +1,162 @@
+<!DOCTYPE .<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kaiser's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+
+         <nav class="topnav" id="myTopnav">
+
+                <a href="singlepage.html"><i id="school"class="fas fa-school"></i></a>
+               
+                    <ul>
+                       
+                      <li ><a href="singlepage.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="portfolio.html">PORTFOLIO</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                      <li style="float:right"><a href="gallery.html">MY ART GALLERY</a></li>
+
+                      <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="fas fa-bars"></i></a></li>
+                
+                    </ul>
+           </nav>
+  <header>
+    <br><br><br>
+    <h1>   Contact</h1>
+  </header>
+  <main>
+ 
+
+     <div class="container">
+        <form action="pen1921@me.com" method="post" enctype="text/plain">
+ 
+         <label for="fname">First Name</label>
+         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+         <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your email..">
+          <label for="lname">Phone Number</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your phone number..">
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+          <option value="australia">Sweden</option>
+          <option value="canada">Denmark</option>
+          <option value="usa">Norway</option>
+          </select>
+
+     <label for="subject">Subject</label>
+     <textarea id="subject" name="subject" placeholder="Write something." style="height:200px"></textarea>
+
+     <input type="submit"value="Submit">
+
+  </form>
+
+
+
+      </form>
+
+      
+            <p>I'd love your feedback! Here's my email address:&nbsp;</p>
+            <p><i class="far fa-map-marker-alt"></i>  Address:   Sanktlarsväg 57,22270, Lund Sweden</p>
+            <p><i class="far fa-at"></i>  Email:  pen1921@me.com</p> <a href="pen1921@me.com">Directly Send Email:  <i class="far fa-envelope"></i></a>
+            <p><i class="far fa-phone"></i>  Telphone:  +46(0)703637554</p><a href="tel:+46(0)703637554">Directly call:  <i class="far fa-phone"></i></a>
+
+            <br><br>
+           
+            <div id="googleMap" class="round-large greyscale" style="width:100%;height:400px;"></div>
+          </div>
+          
+</div>
+</main>
+<!-- Add Google Maps -->
+<script>
+  function myMap()
+  {
+    myCenter=new google.maps.LatLng(55.714100, 13.227980) ;
+    var mapOptions= {
+      center:myCenter,
+  
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+  
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+</script>
+
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrV8M_hXkGQ6LZeqSQZ_R-VqJLMfFHGZI&callback=myMap"></script>
+  
+<br><br><br><br><br>
+
+         <!-- Footer -->
+         <nav class="bottomnav" id="mybottomnav">
+            <div class="footer padding-64">
+                
+                  <a href="#top" class="back-to-top" >Back to top</a> <br><br>
+                  <footer>
+                 
+                    <h2>Responsive Four Column Layout</h2>
+                    <p><strong>Resize the browser window</p><br><br>
+                    <div class="row">
+                      <div class="column" >
+                        <h2>Column 1</h2>
+                        <p>Some text..</p>
+                      </div>
+                      <div class="column" >
+                        <h2>Column 2</h2>
+                        <p>Some text..</p>
+                      </div>
+                      <div class="column" >
+                        <h2>Column 3</h2>
+                        <p>Some text..</p>
+                      </div>
+                      <div class="column">
+                        <h2>Social Media Links</h2>
+                        <p>Some text..</p>
+                      </div>
+                    </div>
+
+
+                    <p> © 2018 K Design AB. All rights reserved <a href="file:///Users/kaiser/Documents/uyghurtech/Slutions.html" title="footer" target="_blank">Kaiser A ÖzHun</a></p>
+                  </footer>
+                   </div>
+               </nav>
+               
+  <script>
+
+    /* Detta är
+    en flerradskommentar i JavaScript */
+
+    // Detta är en enradskommentar i JS
+    
+
+    /* En funktion som lägger till/tar bort klassen "dropped" på .topnav när användaren trycker på meny-ikonen */
+    function navToggle() {
+                  var x = document.getElementById("myTopnav");
+                  if (x.className === "topnav") {
+                      x.className += " dropped";
+                  } else {
+                      x.className = "topnav";
+                    }
+                  }
+      </script>
+</body>
+</html>

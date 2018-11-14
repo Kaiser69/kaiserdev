@@ -1,0 +1,126 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kaiserresume</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+ <body id="body">
+
+      <form id="all">
+        <div id="test">loading</div>
+        <div id="ttt"></div>
+      </form>
+
+
+      <p id="text"> Time in Lund Sweden</p>   <br>
+
+    
+      <div class="intro" id="timepage">
+        <a href="singlepage.html"><div id="animation"><img src="push.png" alt="push me" width="110" height="110"></div></a>
+
+    </div>
+    
+      <a href="javascript:void(0);" id="menu-icon" onclick="navToggle()">
+            <i class="fas fa-bars"></i></a>
+    
+
+     <!--bottum -->
+     <footer>
+      <div id="my-name">
+        <span>BY<small> CLICK</small><img src="push.png" alt="push me" width="40" height="40"><small> VISIT</small> PAGE</span>  
+        <p style="color:rgb(50, 110, 53);opacity: 0.6;
+          filter: Alpha(opacity=50);">  All rights reserved by K-Design   
+         &copy; 2018 </p> 
+      </div>
+    </footer>
+
+
+    <script type="text/javascript">
+
+    //Made By Kaiser
+    
+    
+    window.onload = function(){
+    printTime();
+    };
+    
+    function printTime() {
+        var d = new Date();
+        var hours = d.getHours();
+        var mins = d.getMinutes();
+        var secs = d.getSeconds();
+        var day = d.getDay();
+        var date = d.getDate();
+        var month = d.getMonth();
+        var year = d.getFullYear();
+    
+            switch (day){
+    
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case 6:
+                    day = "Saturday";
+                    break;
+               }
+    
+    
+            if(hours<10){
+                hours = "0" + hours;
+            }
+            if(mins<10){
+    
+                mins = "0" + mins;
+            }
+            if(secs<10){
+    
+                secs = "0" + secs;
+            }
+    
+       month = month + 1; document.getElementById("test").innerHTML = hours+":"+mins+":"+secs;
+    document.getElementById("ttt").innerHTML = day + ", " + date + "." + month + "." + year;
+    }
+    setInterval(printTime, 1000);
+    
+    
+    </script>
+
+         <!--JS start from here -->
+
+
+         <script>
+                    
+                function navToggle() {
+                      var x = document.getElementById("myTopnav");
+                      if (x.className === "topnav") {
+                          x.className += " dropped";
+                      } else {
+                          x.className = "topnav";
+                        }
+                      }
+          </script>
+    
+</body>
+</html>
+

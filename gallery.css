@@ -1,0 +1,303 @@
+
+ 
+  @import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    margin: 0;
+    overflow-x: hidden;
+       }
+
+  #menu-icon {
+    display: none;
+    }
+  
+   #menu-icon {
+    float: right;
+    display: block;
+    }
+  
+  .fa-school{
+        size: 1.2em;
+        margin: 1.5em;
+        float: left;
+    }
+     
+      /*-------Elements---------*/
+  
+     .topnav {
+           background-color: rgba(27, 70, 47, 0.877);
+           position: fixed;
+           width: 100%;
+           top: 0;
+           left: 0;
+           
+    }
+     
+     .topnav ul {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+    }
+     
+     .topnav ul li {
+           display: inline;
+           
+         }
+     
+     .topnav ul li a {
+           text-transform: uppercase;
+           color: rgb(252, 235, 7);
+           padding: 1.3em;
+           float: left;
+           margin: 0 5px 0 0;
+           border: 2px solid rgba(255, 255, 255, 0.651);
+           border-top: none;
+           border-bottom: none;
+           display: none;
+           background: rgb(27, 112, 64);
+           -webkit-transform: skew(-15deg);
+           -moz-transform: skew(-15deg);
+           -ms-transform: skew(-15deg);
+           -o-transform: skew(-15deg);
+           transform: skew(-15deg);
+           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.664);
+           text-align: center;
+           text-decoration:line;   
+     }
+     
+     .topnav a:hover {
+      background-color: rgb(7, 82, 32);
+      color: rgb(255, 255, 255);
+      opacity: 0.7;
+      
+       }
+  
+     #school:hover{
+      opacity: 0.7;
+       }
+      
+     #school {
+      border-radius: 0px;
+      cursor: pointer;
+      transition: 0.3s;
+     }
+  
+     a {
+      color: rgb(252, 235, 8);
+  
+     }
+     .topnav ul li a:hover {
+           color: #D9C6E4;
+     }
+     
+     .topnav.dropped .fa-school{
+           float: none;
+     }
+     
+     .topnav.dropped ul li a {
+           display: block;
+           float: none;
+     }
+     
+     .topnav.dropped #menu-icon {
+           position: absolute;
+           right: 0;
+           top: 0;
+     }
+     * {
+        box-sizing: border-box;
+    }
+  
+  @media screen and (min-width:900px) {
+  
+     .topnav ul li a {
+              display: inline-block;
+        }
+        
+    #menu-icon {
+      display: none;
+     }
+  
+  .fa-school {
+      
+    display: inline;
+  
+    }
+
+    @media (min-width: 700px) {
+      .leading {
+         display: flex;
+         align-items: center;
+       }
+     
+    }
+        
+ /* gallery*/
+
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h2 {
+  margin-top: 3em;
+  padding: 30px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+ 
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+ 
+}
+
+/* Style the buttons */
+.btn {
+
+padding: 12px 16px;
+background-color: rgb(39, 110, 69);
+cursor: pointer;
+margin-top: 1.5em;
+box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.664);
+border: 2px solid rgba(255, 255, 255, 0.651);
+border-top: none;
+border-bottom: none;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+cursor: pointer;
+
+
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+background-color: #ddd;
+opacity: .8;
+background-color: #00BF9C;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+background-color: radial-gradient(#00ff76, #007c39);
+ color: rgb(255, 230, 0);
+ text-transform: uppercase;
+}
+
+/* Add a back to top */
+.back-to-top {    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4em;
+}
+
+.back-to-top  {
+  background-color: rgba(255, 255, 255, 0.555); 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.back-to-top:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.footer {
+  padding: 80px;
+  color: #656565;
+  position: inherit;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(27, 70, 47, 0.877);
+  text-shadow: 4px 4px 8px #3cff00d8;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+.footer:hover {opacity: 1}
+
+.footer span
+{ color: #aaa;
+  font: bold 100% "Trebuchet MS", "PT Sans";
+  }
+}

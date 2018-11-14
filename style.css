@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+
+body {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0em;
+    background-image: radial-gradient(rgb(14, 70, 80), rgb(0, 0, 0));
+    overflow-x: hidden;
+    color: rgba(2, 207, 243, 0.616);
+    font-family: 'Wallpoet';
+ 
+}
+
+#test {
+text-align: center;
+color: rgb(0, 255, 21);
+letter-spacing: 2px;
+font-size:40px;
+text-shadow: 8px 8px 20px rgb(43, 215, 238);
+padding: 5px;
+border: 1px rgb(0, 255, 0);
+font-family: 'Wallpoet';
+
+}
+#text {
+    font-family: 'Wallpoet';
+    text-align: center;
+    color: rgb(0, 255, 255);
+    letter-spacing: 3px;
+    box-shadow: 0 4px 8px 0 rgba(65, 130, 156, 0.2), 0 6px 20px 0 rgba(0, 248, 95, 0.2);
+
+
+}
+
+#text2 {
+    margin-top: 10%;
+    text-align: center;
+    font-family: 'Wallpoet';
+    color: green;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    text-shadow:10px 6px 40px lightskyblue;
+   
+}
+
+#b1 {
+    text-align: center;
+    font-weight:bold;
+    font-family: 'Wallpoet';
+   
+}
+
+#ttt{
+    margin-top: 1px;
+    color:  rgb(192, 220, 238);
+    text-align: center;
+    padding: 3px;
+    font-family: serif;
+    border-radius: 20px;
+   
+
+}
+
+#all {
+    width: 200px;
+    padding:1px;
+    border:0.5px solid rgba(105, 212, 247, 0.795);
+    font-family: serif;
+    border-radius: 28px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(65, 130, 156, 0.2), 0 6px 20px 0 rgba(0, 248, 95, 0.2);
+    font-family: 'Wallpoet';
+   
+
+}
+
+#animation  {
+    /* Choose the animation */
+    animation-name: movingBox;
+  
+    /* The animation’s duration */
+    animation-duration: 1800ms;
+    
+  
+    /* The number of times we want
+        the animation to run */
+    animation-iteration-count: infinite;
+  
+    /* Causes the animation to reverse
+        on every odd iteration */
+    animation-direction: alternate;
+    display: block;
+    margin-left:auto;
+    margin-right: 11em;
+    text-align: center;
+
+  }
+
+
+    #timepage {
+    background-color:none;
+    width: 300px;
+    border: none;
+    padding: 25px;
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    }
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+  
+  @keyframes movingBox {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0.3;
+    }
+  
+    25% {
+      opacity: 0.9;
+    }
+  
+    50% {
+      transform: translate(150px, 150px);
+      opacity: 0.2;
+    }
+  
+    100% {
+      transform: translate(45px, 45px);
+      opacity: 0.8;
+    }
+  }
+
+
+  #my-name         
+  { 
+      padding: 20px;
+      color: #656565;
+      position: fixed;
+      display: flex;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: black;
+      text-shadow: 4px 4px 8px #3cff00d8;
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      
+      
+  }
+
+  #my-name span
+  { color: #aaa;
+  font: bold 160% "Trebuchet MS", "PT Sans"; 
+  }
+
+
+
+p{
+    position:relative;
+    font-family:moby wiron;
+    color:#fff;
+    text-transform:uppercase;
+    font-size:0.9em;
+    letter-spacing:3.5px;
+    overflow:hidden;
+    background:linear-gradient(90deg, #000,#fff,#000);
+    background-size:80%;
+    animation:animate 9s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -webkit-animation-direction: inherit;
+}
+@keyframes animate{
+    0%
+    {
+        background-position:-500%;
+    }
+    100%
+    {
+        background-position:500%;
+    }
+}
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    body {
+      font-size: 100%;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 60%;
+    }
+  }
+  

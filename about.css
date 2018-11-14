@@ -1,0 +1,309 @@
+
+  @import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: "Raleway";
+    margin: 0;
+    overflow-x: hidden;
+       }
+
+
+   #menu-icon {
+   display: none;
+   }
+ 
+  #menu-icon {
+   float: right;
+   display: block;
+   }
+ 
+ .fa-school{
+       size: 1.2em;
+       margin: 1.5em;
+       float: left;
+   }
+    
+     /*-------Elements---------*/
+ 
+    .topnav {
+          background-color: rgba(27, 70, 47, 0.877);
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          
+   }
+    
+    .topnav ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+   }
+    
+    .topnav ul li {
+          display: inline;
+          
+        }
+    
+    .topnav ul li a {
+          overflow-x: hidden;
+          text-transform: uppercase;
+          color: rgb(252, 235, 7);
+          padding: 1.3em;
+          float: left;
+          margin: 0 5px 0 0;
+          border: 2px solid rgba(255, 255, 255, 0.651);
+          border-top: none;
+          border-bottom: none;
+          display: none;
+          background: rgb(27, 112, 64);
+          -webkit-transform: skew(-15deg);
+          -moz-transform: skew(-15deg);
+          -ms-transform: skew(-15deg);
+          -o-transform: skew(-15deg);
+          transform: skew(-15deg);
+          box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.664), 0 6px 20px 0 rgba(0, 0, 0, 0.664);
+          text-align: center;
+          text-decoration:line;
+          
+        
+    }
+    
+    .topnav a:hover {
+     background-color: rgb(7, 82, 32);
+     color: rgb(255, 255, 255);
+     opacity: 0.7;
+      }
+ 
+    #school:hover{
+     opacity: 0.7;
+      }
+     
+    #school {
+     border-radius: 0px;
+     cursor: pointer;
+     transition: 0.3s;
+    }
+ 
+    .topnav ul li a:hover {
+          color: #D9C6E4;
+    }
+    
+    .topnav.dropped .fa-school{
+          float: none;
+    }
+    
+    .topnav.dropped ul li a {
+          display: block;
+          float: none;
+    }
+    
+    .topnav.dropped #menu-icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+    }
+    * {
+       box-sizing: border-box;
+   }
+ 
+ @media screen and (min-width:900px) {
+ 
+    .topnav ul li a {
+             display: inline-block;
+       }
+       
+   #menu-icon {
+     display: none;
+    }
+ 
+ .fa-school {
+     
+   display: inline;
+   color: yellowgreen;
+   
+       }
+   }
+
+   
+  /* Style the header */
+.header1 {
+    margin-bottom: 5em;
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    
+    
+}
+
+/* Increase the font size of the h1 element */
+.header1 h1 {
+    font-size: 40px;
+}
+
+/* Add a back to top */
+.back-to-top {    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4em;
+}
+
+.back-to-top  {
+  background-color: rgba(255, 255, 255, 0.555); 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.back-to-top:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* footer */
+
+ .footer {
+  
+  width:auto;
+  padding:2em;
+  background-color:rgba(27, 70, 47, 0.877);
+  text-align: center;
+  font-size: 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  color: #D9C6E4;
+  
+  }
+
+     /*almost everything here is em based*/
+
+h1, h2 {
+  font-family: 'Crete Round', serif;
+}
+
+
+.content3{
+  background:#11c497bb;
+  width: 80%;
+  max-width: 960px;
+  min-height: 3.750em; 
+  margin: 2em auto;
+  padding: 1.250em;
+  border-radius: 0.313em;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+  line-height: 1.5em;
+  color: #292929;
+}
+
+.ribbon3{
+  position:relative;
+  padding: 0 0.5em;
+  font-size:2.000em;
+  margin: 0 0 0 -0.625em;
+  line-height: 1.875em;
+  color: #ffffff;
+  border-radius: 0 0.156em 0.156em 0;
+  background: rgba(236, 193, 2, 0.753);
+  box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+}
+
+.ribbon3:before, .ribbon3:after{
+  position:absolute;
+  content: '';
+  display: block;
+}
+
+.ribbon3:before{
+  width: 0.469em;
+  height: 100%;
+  padding: 0 0 0.438em;
+  top:0;
+  left: -0.469em;
+  background:inherit;
+  border-radius: 0.313em 0 0 0.313em;
+}
+
+.ribbon3:after{
+  width: 0.313em;
+  height: 0.313em;
+  background: rgba(0,0,0,0.35);
+  bottom: -0.313em;
+  left: -0.313em;
+  border-radius: 0.313em 0 0 0.313em;
+  box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 600px) {
+  
+ 
+  .ribbon3{
+    line-height: 1.143em;
+    padding: 0.5em;
+  }
+  
+  .ribbon3:before, .ribbon3:after{
+    font-size: 0.714em;
+  }
+  
+}
+
+  /* header*/
+    
+    .footer:hover {opacity: 1}
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: auto;
+    text-align: center;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+        width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+  
+    }
+  }
+
+  /* Style the header */
+.header1 {
+    margin-bottom: 5em;
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    
+    
+}
+
+/* Increase the font size of the h1 element */
+.header1 h1 {
+    font-size: 40px;
+}
